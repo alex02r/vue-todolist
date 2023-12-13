@@ -19,9 +19,9 @@
                         </div>
                         <div class="main-content">
                             <ul class="list-unstyled p-5">
-                                <li class="d-flex" v-for="todo,index in todo_list" :key="index">
+                                <li class="todo-item" v-for="todo,index in todo_list" :key="index">
                                     <div>
-                                        <span class="todo-item" v-text="todo.text"></span>
+                                        <span v-text="todo.text"></span>
                                     </div>
                                 </li>
                             </ul>
