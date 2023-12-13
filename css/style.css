@@ -17,3 +17,6 @@
     font-size: 25px;
     border-bottom: 1px solid rgb(157, 157, 157);
 }
+.cursor-pointer{
+    cursor: pointer;
+}
