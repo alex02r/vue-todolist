@@ -19,9 +19,9 @@
                         </div>
                         <div class="main-content">
                             <div class="add-todo">                            
-                                <input type="text" class="form-control mx-3" placeholder="Inserisci una task" name="text">
+                                <input type="text" class="form-control mx-3" v-model="newTask" placeholder="Inserisci una task" name="text">
                             
-                                <button class="btn btn-success">Aggiungi</button>
+                                <button class="btn btn-success" @click="addNewTask">Aggiungi</button>
                             </div>
                             <ul class="list-unstyled p-5">
                                 <li class="todo-item" v-for="todo,index in todo_list" :key="index">
