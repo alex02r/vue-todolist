@@ -21,7 +21,10 @@
                             <ul class="list-unstyled p-5">
                                 <li class="todo-item" v-for="todo,index in todo_list" :key="index">
                                     <div>
-                                        <span v-text="todo.text"></span>
+                                        <span v-text="todo.text" :class="todo.done ? 'text-decoration-line-through' : ''"></span>
+                                    </div>
+                                    <div class="buttons">
+                                        <button class="btn btn-primary" @click="todo.done = !todo.none"> <i :class="'fas fa-check'"></i></button>
                                     </div>
                                 </li>
                             </ul>
