@@ -36,6 +36,12 @@
                                         <button :class="!todo.edit ? 'btn btn-warning' : 'btn btn-success'" @click="todo.edit= !todo.edit">
                                             <i :class="!todo.edit ? 'fas fa-edit' : 'fas fa-check'"></i>
                                         </button>
+                                    <div @click="todo.done = !todo.done">
+                                        <span class="cursor-pointer" v-text="todo.text" :class="todo.done ? 'text-decoration-line-through' : ''"></span>
+                                    </div>
+                                    <div class="buttons">
+                                        <button class="btn btn-primary" @click="todo.done = !todo.done"> <i :class="'fas fa-check'"></i></button>
+                                        <button class="btn btn-danger" @click="removeTodo(index)"><i class="fas fa-x"></i></button>
                                     </div>
                                 </li>
                             </ul>
