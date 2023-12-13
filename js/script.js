@@ -7,19 +7,23 @@ createApp({
             todo_list :[
                 {
                     text : 'Fare la spesa',
-                    done : false
+                    done : false,
+                    edit : false
                 },
                 {
                     text : 'Fare i compiti',
-                    done : false
+                    done : false,
+                    edit : false
                 },
                 {
                     text : 'Pulire la macchina',
-                    done : false
+                    done : false,
+                    edit : false
                 },
                 {
                     text : 'Aggiustare il computer',
-                    done : false
+                    done : false,
+                    edit : false
                 }
             ] 
         }
