@@ -25,6 +25,7 @@
                                     </div>
                                     <div class="buttons">
                                         <button class="btn btn-primary" @click="todo.done = !todo.none"> <i :class="'fas fa-check'"></i></button>
+                                        <button class="btn btn-danger" @click="removeTodo(index)"><i class="fas fa-x"></i></button>
                                     </div>
                                 </li>
                             </ul>
