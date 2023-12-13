@@ -19,7 +19,11 @@
                         </div>
                         <div class="main-content">
                             <ul class="list-unstyled p-5">
-                                <li></li>
+                                <li class="d-flex" v-for="todo,index in todo_list" :key="index">
+                                    <div>
+                                        <span class="todo-item" v-text="todo.text"></span>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -27,6 +31,7 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
