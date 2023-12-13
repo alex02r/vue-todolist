@@ -25,7 +25,7 @@
                             </div>
                             <ul class="list-unstyled p-5">
                                 <li class="todo-item" v-for="todo,index in todo_list" :key="index">
-                                    <div>
+                                    <div @click="todo.done = !todo.none">
                                         <span v-text="todo.text" :class="todo.done ? 'text-decoration-line-through' : ''"></span>
                                     </div>
                                     <div class="buttons">
