@@ -14,10 +14,15 @@
             <div class="row">
                 <div class="col-12">
                     <div class="shadow my-5">
-                        <div class="text-center">
+                        <div class="text-center mb-5">
                             <h1>My Todo List</h1>
                         </div>
                         <div class="main-content">
+                            <div class="add-todo">                            
+                                <input type="text" class="form-control mx-3" placeholder="Inserisci una task" name="text">
+                            
+                                <button class="btn btn-success">Aggiungi</button>
+                            </div>
                             <ul class="list-unstyled p-5">
                                 <li class="todo-item" v-for="todo,index in todo_list" :key="index">
                                     <div>
